@@ -1,0 +1,20 @@
+site_name: My Docs
+
+theme: material
+
+nav:
+    - Programming:
+        - Docker: docker.md
+        - .Net:
+            - Entity Framework: efcore.md
+        - Kubernetes: kubernetes.md
+        - Linux: linux.md
+        - Python: python.md
+        - Cryptography: cryptography.md
+        - Code Review: code-review.md
+    - Sciences:
+        - Physics: physics.md
+
+markdown_extensions:
+    - toc:
+        permalink: true
