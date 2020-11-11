@@ -9,7 +9,10 @@ nav:
             - Entity Framework: efcore.md
         - Kubernetes: kubernetes.md
         - Linux: linux.md
-        - Python: python.md
+        - Python:
+            - GIL: python/gil.md
+            - Packaging: python/packaging.md
+            - PEP: python/pep.md
         - Cryptography: cryptography.md
         - Code Review: code-review.md
     - Sciences:

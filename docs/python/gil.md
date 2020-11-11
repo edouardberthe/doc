@@ -1,12 +1,11 @@
-## Packaging
-
-[État de l'art du packaging python](https://philpep.org/blog/etat-de-l-art-du-packaging-python)
-
-## GIL in Python
+# GIL in Python
 
 Resources:
+
 - Blog article on [realpython.org](https://realpython.com/python-gil/) 
 - Talk by Larry Hastings during PyCon 2015: [Python's Infamous GIL](https://www.youtube.com/watch?v=KVKufdTphKs) (referenced by the former)
+
+Summary:
 
 - There is no Garbage Collector in Python, so we need to count the references of any object, so that when this count reaches 0 we can free the memory allocated to store this object.
 - Problem is: when several threads involved, they can all have different references to the same object --> difficult to keep track of the references
