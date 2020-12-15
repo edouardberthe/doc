@@ -10,9 +10,10 @@ nav:
         - Kubernetes: kubernetes.md
         - Linux: linux.md
         - Python:
-            - GIL: python/gil.md
-            - Packaging: python/packaging.md
             - PEP: python/pep.md
+            - Packaging: python/packaging.md
+            - GIL: python/gil.md
+            - Concurrent programming: python/async.md
         - Cryptography: cryptography.md
         - Code Review: code-review.md
     - Sciences:
