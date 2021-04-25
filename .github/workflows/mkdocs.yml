@@ -1,0 +1,16 @@
+name: MkDocs Build & Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        Name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Deploy MkDocs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@1.16
