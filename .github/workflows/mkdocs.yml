@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        Name: Checkout
+        name: Checkout
         uses: actions/checkout@v2
       -
         name: Deploy MkDocs
