@@ -16,9 +16,19 @@ nav:
             - Concurrent programming: python/async.md
         - Cryptography: cryptography.md
         - Code Review: code-review.md
+        - effective-cpp.md
     - Sciences:
         - Physics: physics.md
 
 markdown_extensions:
+    - admonition
     - toc:
         permalink: true
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.details
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
