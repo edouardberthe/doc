@@ -1,4 +1,6 @@
-# Important PEP to remember
+# PEP
+
+## Important PEPs to remember
 
 ## Generators and synchronicity
 

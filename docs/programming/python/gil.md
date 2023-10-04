@@ -11,10 +11,10 @@ Summary:
 - Problem is: when several threads involved, they can all have different references to the same object --> difficult to keep track of the references
 - Solution taken for Python: simply disallowing it! There is a lock on the **Python interpreter itself**. If there are several threads involved, and if they want to execute native Python code, they have to wait for their turn to execute the Python interpreter.
 - Dates:
-    - 1990: Python invented
-    - 1992: GIL added. At this time, there was no multi-core, because if you wanted to do it, you really had to physically handle 2 processors on the motherboard (so have a motherboard specially adapted for that).
-    - But now, the world is fully multi-core, since we managed to have several physical cores on the same processor
-    - Guido is aware of that, but he said he is ok to remove the GIL, only if it doesn't decrease performance on single-threaded examples --> very difficult to reach!
+  - 1990: Python invented
+  - 1992: GIL added. At this time, there was no multi-core, because if you wanted to do it, you really had to physically handle 2 processors on the motherboard (so have a motherboard specially adapted for that).
+  - But now, the world is fully multi-core, since we managed to have several physical cores on the same processor
+  - Guido is aware of that, but he said he is ok to remove the GIL, only if it doesn't decrease performance on single-threaded examples --> very difficult to reach!
 
 There have been attempts to do multi-threading on Python in Python 1.4 without any API change.
 They took all the global variables and turn them into `struct`s (structures).

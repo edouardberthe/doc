@@ -1,28 +1,40 @@
 site_name: My Docs
 
 theme:
-    name: material
-    features:
-        - content.code.copy
-        - navigation.tabs
+  name: material
+  features:
+    - content.action.view
+    - content.action.edit
+    - content.code.copy
+    - navigation.tabs
+    - navigation.path
+  icon:
+    repo: fontawesome/brands/github-alt
+
+
+
+
+
 
 nav:
-    - Programming:
-        - Docker: docker.md
-        - .Net:
-            - Entity Framework: efcore.md
-        - Kubernetes: kubernetes.md
-        - Linux: linux.md
-        - Python:
-            - PEP: python/pep.md
-            - Packaging: python/packaging.md
-            - GIL: python/gil.md
-            - Concurrent programming: python/async.md
-        - Cryptography: cryptography.md
-        - Code Review: code-review.md
-        - effective-cpp.md
-    - Sciences:
-        - Physics: physics.md
+- Programming:
+  - C++:
+    - programming/cpp/effective-cpp.md
+  - .NET:
+    - Entity Framework: programming/efcore.md
+  - Python:
+    - PEP: programming/python/pep.md
+    - Packaging: programming/python/packaging.md
+    - GIL: programming/python/gil.md
+    - Concurrent programming: programming/python/async.md
+  - Code Review: programming/code-review.md
+  - Cryptography: programming/cryptography.md
+  - Containerization:
+    - Docker: programming/docker.md
+    - Kubernetes: programming/kubernetes.md
+  - Linux: programming/linux.md
+- Sciences:
+  - Physics: science/physics.md
 
 markdown_extensions:
     - admonition
@@ -36,3 +48,7 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
+
+repo_url: https://github.com/edouardberthe/doc
+repo_name: edouardberthe/doc
+edit_uri: edit/main/docs/

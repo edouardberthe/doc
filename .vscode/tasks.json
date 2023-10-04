@@ -6,42 +6,38 @@
         "clear": true
     },
     "tasks": [
-        {
-            "label": "MkDocs build",
-            "type": "shell",
-            "command": "python",
-            "args": ["-m", "mkdocs", "build"],
-            "group":{
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "MkDocs serve",
-            "type": "shell",
-            "command": "python",
-            "args": ["-m", "mkdocs", "serve"],
-            "detail": "Run `python -m mkdocs serve`",
-            "icon": {
-                "id": "book"
-            },
-            "isBackground": true,
-            "problemMatcher":
-            {
-                "owner": "python",
-                "fileLocation": "relative",
-                "pattern": {
-                    "regexp": "^([^\\\\s].*)\\\\((\\\\d+,\\\\d+)\\\\):\\\\s*(.*)$",
-                    "file": 1,
-                    "location": 2,
-                    "message": 3
-                },
-                "background": {
-                    "activeOnStart": true,
-                    "beginsPattern": "^INFO\\s*-\\s*\\[\\d{1,2}:\\d{1,2}:\\d{1,2}\\] Detected file changes",
-                    "endsPattern": "^INFO\\s*-\\s*Documentation built in \\d*\\.\\d* seconds"
-                }
-            }
-        }
+        // {
+        //     "label": "MkDocs build",
+        //     "type": "shell",
+        //     "command": "mkdocs",
+        //     "args": ["build"],
+        // },
+        // {
+        //     "label": "MkDocs serve",
+        //     "type": "process",
+        //     "command": "mkdocs",
+        //     "args": ["serve"],
+        //     "detail": "Run `python -m mkdocs serve`",
+        //     "icon": {
+        //         "id": "book"
+        //     },
+        //     "isBackground": true,
+        //     "problemMatcher":
+        //     {
+        //         "owner": "python",
+        //         "fileLocation": "relative",
+        //         "pattern": {
+        //             "regexp": "^([^\\\\s].*)\\\\((\\\\d+,\\\\d+)\\\\):\\\\s*(.*)$",
+        //             "file": 1,
+        //             "location": 2,
+        //             "message": 3
+        //         },
+        //         "background": {
+        //             "activeOnStart": true,
+        //             "beginsPattern": "^INFO\\s*-\\s*\\[\\d{1,2}:\\d{1,2}:\\d{1,2}\\] Detected file changes",
+        //             "endsPattern": "^INFO\\s*-\\s*Documentation built in \\d*\\.\\d* seconds"
+        //         }
+        //     }
+        // }
     ]
 }
