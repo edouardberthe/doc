@@ -19,7 +19,11 @@ theme:
 nav:
 - Programming:
   - C++:
-    - programming/cpp/effective-cpp.md
+    - Effective C++:
+      - Chapter 1: programming/cpp/effective-cpp/chapter-1.md
+      - Chapter 2: programming/cpp/effective-cpp/chapter-2.md
+      - Chapter 3: programming/cpp/effective-cpp/chapter-3.md
+      - Chapter 4: programming/cpp/effective-cpp/chapter-4.md
   - .NET:
     - Entity Framework: programming/efcore.md
   - Python:
