@@ -20,8 +20,11 @@ Smarts pointers are the way to solve it.
 
 ### 18. Use `std::unique_ptr` for exclusive-ownership resource management
 
-> If a raw pointer is small enough and fast enough for you, a `std::unique_ptr` almost certainly is, too
+Small and fast.
 
-By default, resource destruction takes place via `delete` but custom deleters can be specified. Stateful deleters increase the size of `std::unique_ptr` objects.
+> *If a raw pointer is small enough and fast enough for you, a `std::unique_ptr` almost certainly is, too. *
 
-`std::unique_ptr -> std::shared_ptr` conversion is easy.
+> [!TIP] Summary
+> By default, resource destruction takes place via `delete` but custom deleters can be specified. Stateful deleters increase the size of `std::unique_ptr` objects.
+>
+> `std::unique_ptr -> std::shared_ptr` conversion is easy.
