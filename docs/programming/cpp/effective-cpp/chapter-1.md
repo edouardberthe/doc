@@ -1,4 +1,13 @@
-# Accustoming Yourself to C++
+---
+title: Chapter 1
+subtitle: Accustoming yourself to C++
+summary: A brief description of my document.
+date: 2023-10-07
+icon: material/emoticon-happy 
+status: new
+---
+
+## Accustoming Yourself to C++
 
 ## Item 1: View C++ as a federation of languages
 

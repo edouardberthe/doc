@@ -1,5 +1,9 @@
 site_name: My Docs
 
+repo_url: https://github.com/edouardberthe/doc
+repo_name: edouardberthe/doc
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   features:
@@ -11,10 +15,8 @@ theme:
   icon:
     repo: fontawesome/brands/github-alt
 
-
-
-
-
+plugins:
+    - social
 
 nav:
 - Programming:
@@ -52,7 +54,3 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
-
-repo_url: https://github.com/edouardberthe/doc
-repo_name: edouardberthe/doc
-edit_uri: edit/main/docs/
